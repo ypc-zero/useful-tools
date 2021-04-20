@@ -1,0 +1,59 @@
+/* pages/mypage/mypage.wxss */
+
+.mypage-box{
+  background-color: #f8fdff;
+  width: 100%;
+  height: 100vh;
+}
+.mypage-box > .user-box{
+  background-color: rgba(73, 164, 250, 0.678);
+  width: 100%;
+  height: 350rpx;
+  margin-bottom: 50rpx;
+  border-radius: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mypage-box > .user-box >.user-image{
+  display: block;
+}
+.mypage-box > .user-box >.user-image image{
+
+  border-radius: 50%;
+  width: 200rpx;
+  height: 200rpx;
+}
+.mypage-box > .user-box >.user-name{
+  text-align: center;
+  font-weight: normal;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.user-name .login{
+  margin-top: 10rpx;
+  color: rgb(15, 15, 228);
+  /* background-color: rgba(73, 164, 250, 0.678); */
+  text-decoration: underline;
+  border: none;
+  font-size: 1em;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mypage-box > .list-box{
+  
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.mypage-box > .list-box > .list-item{
+  height: 80rpx;
+  text-indent: 30rpx;
+  margin-bottom: 20rpx;
+  border-radius: 15rpx;
+  padding-top: 30rpx;
+  background-color: #bde4d7;
+}

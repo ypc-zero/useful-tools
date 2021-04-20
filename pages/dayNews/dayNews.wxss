@@ -1,0 +1,28 @@
+/* pages/dayNews/dayNews.wxss */
+/* 设置页面属性 */
+.page-box{
+  font-size: 1em;
+  width: 100%;
+  margin: 0 auto;
+  text-align: justify
+}
+/* 设置头部日期属性 */
+.date-box{
+  background-color:#bbb ;
+  font-size: medium;
+  font-weight: bold;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-align: center;
+}
+/* 设置新闻列表属性 */
+.news-list{
+  text-indent: 35px;
+  line-height: 1.5em;
+  background-color:#bbb ;
+}
+/* 设置单个新闻属性 */
+.news-list .news-item{
+  margin-bottom: 3px;
+  background-color: #eee;
+}

@@ -1,0 +1,16 @@
+<!--pages/dayNews/dayNews.wxml-->
+<!-- 页面级view标签 -->
+<view class="page-box">
+  <!-- 页面头部日期 -->
+  <view class="date-box">
+    <text>今天是 {{newsDay.cYear}}年 {{newsDay.cMonth}}月 {{newsDay.cDay}}日</text>
+  </view>
+  <!-- 新闻列表 -->
+  <view class="news-list">
+      <block wx:for="{{newsList}}" class="news-item" wx:key="item">
+        <view class="news-item" bindtap="goToNews" id="{{index}}" >
+          <text>{{index+1}}、{{item.title}}</text>
+        </view>
+      </block>
+  </view>
+</view>

@@ -1,0 +1,53 @@
+/* pages/index/index.wxss */
+/* 首页方框属性 */
+.index-box{
+  background-color: #ffffff;
+}
+/* 设定swiper方框属性：高度350rpx，下边框间距20px */
+.swiper-box{  
+  height: 350rpx;
+  margin-bottom: 20px;
+}
+/* 设定sweipwe方框图片属性，宽高自适应100% */
+.swiper-box image{
+  width: 100%;
+  height: 100%;
+}
+/* 设定工具框属性：字体大小11磅，下外边距20rpx,背景色 */
+.tools-box{
+  font-size: 11pt;
+  margin-bottom: 20rpx;
+  background-color: #ffffff;
+}
+/* 设定工具框标题属性（继承工具框）：上下边距20rpx,左右边距35rpx */
+.tools-box > .box-title{
+  margin: 20rpx 35rpx;
+  font-weight: bold;
+}
+/* 设定工具框行属性（继承工具框）：定义排列自动居中（flex）,必要时可以拆行（warp）,上下边距0rpx,左右边距20rpx */
+.tools-box > .box-inner{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20rpx;
+}
+/* 设定工具框单个事务属性（继承行），让所有弹性盒模型对象的子元素都有相同的长度，且忽略它们内部的内容（flex：1） */
+.tools-box > .box-inner > .box-item{
+  /* flex: 1; */
+  margin-right: 13rpx;
+}
+/* 设置事务图片属性 */
+.tools-box > .box-inner > .box-item > image{
+  display: block;
+  width: 150rpx;
+  height: 150rpx;
+  margin: 0 auto;
+  border-radius: 20rpx;
+  border: 1rpx solid #555;
+}
+/* 设置事务框内view属性 */
+.tools-box > .box-inner > .box-item > view{
+  width: 200rpx;
+  margin: 10rpx auto;
+  font-size: 10pt;
+  text-align: center;
+}

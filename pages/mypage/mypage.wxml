@@ -1,0 +1,27 @@
+<!--pages/mypage/mypage.wxml-->
+<!-- 登陆框 -->
+<view class="mypage-box">
+  <view class="user-box">
+    <!-- 点击头像登陆 -->
+    <view wx:if="{{noLogin}}" class="user-image">  
+      <image src="/images/icon.jpg"></image>
+    </view>
+    <view wx:else class="user-image">  
+      <image src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    </view>
+    <!-- 点击文字登陆 -->
+    <view wx:if="{{noLogin}}" class="user-name">
+      <button class="login" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+        登录
+      </button>
+    </view>
+    <view wx:else class="user-name">
+      <text>{{userInfo.nickName}}</text>
+    </view>
+  </view>
+  <!-- 列表框 -->
+  <view class="list-box">
+    <view class="list-item" bindtap="onClickSuggestion">建议反馈</view>
+    <view class="list-item" bindtap="onClickAbout">关于</view>
+  </view>
+</view>

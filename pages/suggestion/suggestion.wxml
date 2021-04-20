@@ -1,0 +1,10 @@
+<!--pages/suggestion/suggestion.wxml-->
+
+<view class="input-word">
+    <input type="text" />
+</view>
+<view>
+  <button open-type="feedback">
+      提交
+    </button>
+</view>

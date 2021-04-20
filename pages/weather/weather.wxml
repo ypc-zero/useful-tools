@@ -1,0 +1,78 @@
+<!--pages/weather/weather.wxml-->
+<!-- 页面级view标签 -->
+<view class="weather">
+  <!-- 首部显示地址，刷新按钮 -->
+  <view class="header">
+      <image src="/images/images_weather/location.png"></image>
+      <view>{{cityInfo.c7}}.{{cityInfo.c5}}.{{cityInfo.c3}}</view>
+      <view class="right" bindtap="refresh">更新<image src="/images/images_weather/refresh.png"></image></view>
+  </view>
+  <!-- 显示当前天气 -->
+  <view class="now-list">
+    <!-- 显示当前气温和天气 -->
+    <view class="now-weather">
+      <view>{{nowWeather.temperature}}  ℃</view>
+      <view>{{nowWeather.weather}}</view>
+    </view>
+    <!-- 天气图片 -->
+    <image src="{{nowWeather.weather_pic}}"></image>
+    <!-- 显示今日最高与最低温度 -->
+    <view class="today-weather">
+      <!-- 今日白天温度 -->
+      <view class="day-tem">
+        白天： {{f1.day_air_temperature}}℃
+      </view>
+      <!-- 今日夜晚温度 -->
+      <view class="night-tem">
+        夜晚： {{f1.night_air_temperature}}℃
+      </view>
+    </view>
+  </view>
+  <!-- 当天其他信息 -->
+  <view class="moreInfo">
+    	<!-- 第一行 -->
+			<view class="moreInfo-item">空气：{{nowWeather.aqiDetail.quality}}</view>
+			<view class="separator"></view>
+			<view class="moreInfo-item">湿度：{{nowWeather.sd}}</view>
+			<view class="separator"></view>
+			<view class="moreInfo-item">PM 2.5：{{nowWeather.aqiDetail.pm2_5}}</view>
+			<!-- 第二行 -->
+			<view class="moreInfo-item">气压：{{f1.air_press}}</view>
+			<view class="separator"></view>
+			<view class="moreInfo-item">风向：{{nowWeather.wind_direction}}</view>
+			<view class="separator"></view>
+			<view class="moreInfo-item">{{nowWeather.wind_power}}</view>
+  </view>
+  <!-- 天气轮播 -->
+  <view>
+    <swiper class="swiper-box" autoplay="true" interval="5000" duration="500">
+      <swiper-item>
+        今天
+        <view class="item1">
+          <view>白天：{{f1.day_weather}}    {{f1.day_air_temperature}}</view>
+          <view> {{f1.day_wind_direction}} ：{{f1.day_wind_power}}</view>
+          <view>夜晚：{{f1.night_weather}}    {{f1.night_air_temperature}}</view>
+          <view> {{f1.night_wind_direction}} ：{{f1.night_wind_power}}</view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        明天
+        <view class="item1">
+          <view>白天：{{f2.day_weather}}    {{f2.day_air_temperature}}</view>
+          <view> {{f2.day_wind_direction}} ：{{f2.day_wind_power}}</view>
+          <view>夜晚：{{f2.night_weather}}    {{f2.night_air_temperature}}</view>
+          <view> {{f2.night_wind_direction}} ：{{f2.night_wind_power}}</view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        后天
+        <view class="item1">
+          <view>白天：{{f3.day_weather}}    {{f3.day_air_temperature}}</view>
+          <view> {{f3.day_wind_direction}} ：{{f3.day_wind_power}}</view>
+          <view>夜晚：{{f3.night_weather}}    {{f3.night_air_temperature}}</view>
+          <view> {{f3.night_wind_direction}} ：{{f3.night_wind_power}}</view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<!--pages/externalWeb/externalWeb.wxml-->
+<!-- 跳转链接 -->
+<web-view src="{{webUrl}}"></web-view>
+<!-- web-view需要设置跳转白名单 -->
+<!-- 尚未设置 -->
+<!-- 当前已设置：不校验合法域名 -->

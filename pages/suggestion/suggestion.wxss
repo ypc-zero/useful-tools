@@ -1,0 +1,8 @@
+/* pages/suggestion/suggestion.wxss */
+.input-word{
+  height: 450rpx;
+  width: 95%;
+  margin-left: 17rpx;
+  border:  1px solid;
+  margin-bottom: 50rpx;
+}

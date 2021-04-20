@@ -1,0 +1,135 @@
+/* pages/weather/weather.wxss */
+/* 设置页面属性 */
+.weather{
+  min-height: 100vh;
+  width: 100%;
+  padding: 14rpx 21rpx;
+  align-items: center;
+  background: -webkit-linear-gradient(top, #3d395a, #435f6d);
+  color: white;
+}
+
+/* 设置头部地区及更新框 */
+.header{
+  margin-bottom: 14rpx;
+  height: 70rpx;
+  width: 700rpx;
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  /* text-align: center; */
+}
+/* 设置头部图片 */
+.header image{
+  width: 35rpx;
+  height: 35rpx;
+}
+/* 设置头部靠右部分 */
+.header .right{
+  flex: 1;
+  text-align: right;
+  color: #707070;
+}
+
+/* 设置今日天气信息列表 */
+.now-list{
+  width: 700rpx;
+  height: 350rpx;
+  display: flex;
+  margin-bottom: 14rpx;
+  align-items: center;
+}
+/* 设置今日天气 */
+.now-list .now-weather{
+  width: 150px;
+  height: 350rpx;
+  justify-content: center;
+  display: flex;
+  margin-right: 0rpx;
+  font-size: 20pt;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+/* 设置天气图片 */
+.now-list image{
+  justify-content: center;
+  display: flex;
+  margin-left: 0rpx;
+  margin-right: 25rpx;
+  height: 250rpx;
+   width: 250rpx;
+}
+/* 今日温度信息 */
+.now-list .today-weather{
+  height: 300rpx;
+  width: 250rpx;
+  flex-direction: column;
+}
+.now-list .today-weather .day-tem{
+  font-size: 10pt;
+  flex-direction: row;
+  height: 150rpx;
+  width: 250rpx;
+  padding-top: 15rpx;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.now-list .today-weather .night-tem{
+  font-size: 10pt;
+  flex-direction: row;
+  height: 150rpx;
+  width: 250rpx;
+  justify-content: center;
+  display: flex;
+}
+
+/* 当天更多信息 */
+.moreInfo{
+  height: 140rpx;
+  width: 100%;
+  margin-top: 10rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10pt;
+}
+/* 具体信息 */
+.moreInfo-item{
+  height: 50%;
+  width: 32%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15rpx;
+}
+/* 竖隔 */
+.separator{
+  height: 50rpx;
+  width: 2rpx;
+  border-left: 2rpx solid#ffffff;
+}
+/* swiper框 */
+.swiper-box{
+  height: 350rpx;
+  width: 95%;
+  margin-top: 60rpx;
+  align-items: center;
+  text-align: center;
+  font-size: 10pt;
+  border-radius: 20rpx;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/*  */
+.swiper-box .item1{
+  margin-top: 30rpx;
+  height: 280rpx;
+  width: 90%;
+  text-indent: 180rpx;
+  text-align: left;
+  line-height: 60rpx;
+}
+

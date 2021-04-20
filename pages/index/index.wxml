@@ -1,0 +1,47 @@
+<!--pages/index/index.wxml-->
+
+<view class="index-box">
+  <!-- 轮播块 -->
+  <view>
+    <swiper class="swiper-box" indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}"
+      indicator-active-color="{{indicatorActiveColor}}" autoplay="{{autoplay}}" interval="{{interval}}"
+      duration="{{duration}}">
+      <!-- //wx:for:列表渲染组件 -->
+      <block wx:for="{{imgUrls}}" wx:key="img">
+        <navigator url="{{item.targetPath}}" open-type="navigate">
+          <swiper-item class="fitSwiperItem">
+            <image src="{{item.img}}" style="width:100%;heigth"></image>
+          </swiper-item>
+        </navigator>
+      </block>
+    </swiper>
+  </view>
+  <!-- 常用功能块 -->
+  <view class="tools-box">
+    <view class="box-title">常用工具</view>
+    <view class="box-inner">
+      <view class="box-item" bindtap="onClickWeather">
+        <image src="/images/images_index/icon-weather.jpg"></image>
+        <view>天气</view>
+      </view>
+      <view class="box-item" bindtap="onClickNews">
+        <image src="/images/images_index/icon-news.jpg"></image>
+        <view>每日新闻</view>
+      </view>
+    </view>
+  </view>
+  <!-- 全部功能块 -->
+  <view class="tools-box">
+    <view class="box-title">全部工具</view>
+    <view class="box-inner">
+      <view class="box-item" bindtap="onClickWeather">
+        <image src="/images/images_index/icon-weather.jpg"></image>
+        <view>天气</view>
+      </view>
+      <view class="box-item" bindtap="onClickNews">
+        <image src="/images/images_index/icon-news.jpg"></image>
+        <view>每日新闻</view>
+      </view>
+    </view>
+  </view>
+</view>
